@@ -51,6 +51,7 @@ docker-nginx-php-mongo
 │   │   └── default.conf
 │   ├── php
 │   │   └── php.ini
+│   │   └── error.log
 │   └── ssl
 └── web
     ├── app

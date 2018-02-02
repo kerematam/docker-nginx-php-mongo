@@ -14,11 +14,12 @@ services:
             - "php"
             - "mongodb"
     php:
-        image: nanoninja/php-fpm
+        image: kerematam/php-fpm
         restart: always
         volumes:
             - "./etc/php/php.ini:/usr/local/etc/php/conf.d/php.ini"
             - ./web:/web
+            - ./etc/php/error.log:/usr/local/etc/php/error.log
     composer:
         image: composer/composer
         volumes:
